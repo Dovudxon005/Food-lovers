@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+*{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 95%;
+    margin: auto;
+}
+
+.nav{
+    width: 100%;
+    height: 100px;
+    background-color: #ff7300;
+    background: #ff7300;
+    background: linear-gradient(162deg, rgba(255,115,0,1) 0%, rgba(108,0,0,1) 100%);
+    display: flex;
+    margin: auto;
+    align-items: center;
+    color: white;
+    justify-content: space-evenly;
+}
+.nav h1{
+    font-size: 60px;
+    font-family: "Courgette", cursive;
+}
+.nav ul{
+    display: flex;
+    align-items: center;
+}
+.nav li{
+    list-style: none;
+    font-size: 25px;
+    margin: 0px 20px;
+    transition: 0.5s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-bottom: 4px solid transparent; /* Boshlang'ich qalinlik 2px va oqimsiz */
+  transition: border-color 0.3s; 
+}
+.nav li:hover{
+    cursor: pointer;
+    border-bottom-color: wheat; /* Textga chiziq bo'lganda chiziq qara rangga o'tsin */
+    padding-bottom: 8px;
+
+}
+.nav .buttons{
+    width: 400px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.nav .buttons ion-icon{
+    font-size: 25px;
+}
+.nav .button_1{
+    width: 170px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 18px;
+    background-color: #ff7300;
+    color: white;
+    border: none;
+    font-weight: 800;
+    border: 2px solid white;
+}
+.nav .button_1:hover{
+    cursor: pointer;
+    color: white;
+    
+}
+.nav .button_1:active{
+    background-color: white;
+    color: rgba(108,0,0,1);
+}
+.nav .button_2{
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 18px;
+    background-color: #ff7300;
+    color: white;
+    border: none;
+    font-weight: 800;
+    border: 2px solid white;
+}
+.nav .button_2:hover{
+    background-color: #ff7300;
+    cursor: pointer;
+    color: white;
+    
+}
+.nav .button_2:active{
+    background-color: white;
+    color: rgba(108,0,0,1);
+}
+.box_1{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.box_1 div{
+    width: 50%;
+}
+.box_1 div h1{
+    font-size: 80px;
+    color: #ff7300;
+    padding-left: 50px;
+
+    font-family: "Concert One", sans-serif;
+}
+.box_1 div h1 span{
+    color: rgb(157, 47, 47);
+}
+.box_1 div p{
+    font-size: 20px;
+    font-family: "Concert One", sans-serif;
+    font-family: 300;
+    color: dimgray;
+    padding-top: 15px;
+    padding-left: 50px;
+}
+.box_1 div button{
+    width: 250px;
+    height: 60px;
+    border: none;
+    background-color: rgba(108,0,0,1);
+    color: white;
+    border-radius: 50px;
+    font-size: 35px;
+    font-family: "Concert One", sans-serif;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.box_1 div button:hover{
+    color: white;
+    background-color: #ff7300;
+    cursor: pointer;
+}
+.box_1__right{
+    width: 50%;
+}
+.box_2{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+}
+.box_2 div{
+    width: 50%;
+}
+.box_2 div h1{
+    font-size: 80px;
+    font-family: "Concert One", sans-serif;
+    color: #ff7300;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.box_2 div p{
+    font-size: 20px;
+    font-family: "Concert One", sans-serif;
+    color: dimgray;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.box_2 div h1 span{
+    color: rgb(157, 47, 47);
+}
+.box_2 div button{
+    width: 200px;
+    height: 60px;
+    background-color: rgba(108,0,0,1);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 25px;
+    font-family: "Concert One", sans-serif;
+    margin-top: 50px;
+    margin-left: 30px;
+    transition: 0.3s;
+}
+.box_2 div .button_2{
+    width: 200px;
+    height: 60px;
+    background-color: #ff7300;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 25px;
+    font-family: "Concert One", sans-serif;
+    margin-top: 50px;
+    margin-left: 30px;
+    transition: 0.3s;
+}
+.box_2 div .button_2:active{
+    background-color: rgb(134, 6, 6);
+    cursor: pointer;
+}
+.box_2 div button:active{
+    cursor: pointer;
+    background-color: #f97204;
+}
+
+.box_3{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.box_3 div{
+    width: 450px;
+    height: 480px;
+    box-shadow: 5px 10px 30px black;
+    text-align: center;
+    background-color: #ff7300;
+    border-radius: 30px;
+}
+.box_3 .div_2{
+    margin-top: 80px;
+    margin-left: -50px;
+    background-color: rgba(108,0,0,1);
+    color: #ff7300;
+}
+.box_3 .div_2 h2{
+    color: #ff7300;
+}
+.box_3 .div_3{
+    margin-top: 160px;
+    margin-left: -50px;
+}
+.box_3 div img{
+    width: 75%;
+}
+.box_3 div h2{
+    color: rgba(108,0,0,1);
+    font-size: 50px;
+    padding-top: 10px;
+    font-family: "Concert One", sans-serif;
+}
+.box_3 div p{
+    font-size: 20px;
+    font-family: "Concert One", sans-serif;
+}
+.pizza{
+    font-size: 150px;
+    font-family: "Concert One", sans-serif;
+    color: rgba(108,0,0,1);
+    text-align: center;
+}
+.deliver{
+    font-size: 110px;
+    font-family: "Concert One", sans-serif;
+    color: #ff7300;
+    text-align: center;
+}
+.menu{
+    font-size: 110px;
+    font-family: "Concert One", sans-serif;
+    color: #ff7300;
+    text-align: center;
+}
+.box_4{
+    width: 100%;
+    height: 75%;
+    border: 1px solid black;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar__menu__logo{
+    font-size: 20px;
+    display: none;
+}
+
+
+/* Navbar media boshlandi */
+
+@media (max-width: 1246px){
+
+    .nav li{
+        font-size: 20px;
+    }
+}
+@media (max-width: 1200px){
+    .nav li{
+        font-size: 19px;
+    }
+    .nav h1{
+        font-size: 45px;
+    }
+    .nav .button_1{
+        width: 160px;
+        height: 45px;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: 800;
+    }
+    .nav .button_2{
+        width: 90px;
+        height: 45px;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: 800;
+    }
+    .nav .buttons ion-icon{
+        font-size: 20px;
+    }
+}
+@media (max-width: 1127px){
+    .nav li{
+        font-size: 18px;
+    }
+}
+@media (max-width: 1111px){
+    .nav li{
+        font-size: 17px;
+    }
+    .nav .buttons{
+        width: 360px;
+    }
+    .nav h1{
+        padding-left: 10px;
+    }
+}
+@media (max-width: 1065px){
+    .nav .buttons{
+        width: 345px;
+    }
+}
+@media (max-width: 1051px){
+    .nav .buttons{
+        width: 330px;
+    }
+}
+@media (max-width: 1034px){
+    .nav li{
+        margin: 0px 18px;
+    }
+}
+@media (max-width: 1014px){
+    .nav .button_1{
+        width: 150px;
+        height: 45px;
+        border-radius: 50px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .search-outline{
+        display: none;
+    }
+    .bag-outline{
+        display: none;
+    }
+    .nav .button_2{
+        width: 80px;
+        height: 45px;
+        border-radius: 50px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .nav .buttons ion-icon{
+        font-size: 20px;
+    }
+    .nav .buttons{
+        width: 250px;
+    }
+}
+@media (max-width: 1010px){
+    .nav .buttons{
+        width: 320px;
+    }
+}
+@media (max-width: 1005px){
+    .nav ul{
+        padding-left: 20px;
+    }
+}
+@media (max-width: 985px){
+    .nav ul{
+        display: none;
+    }
+    .nav h1{
+        font-size: 50px;
+    }
+    .navbar__menu__logo{
+        display: block;
+        font-size: 35px;
+        margin-left: -10px;
+    }
+    .nav{
+        justify-content: space-between;
+    }
+    .nav .buttons{
+        width: 230px;
+    }
+}
+@media (max-width: 720px){
+    .nav .buttons{
+        width: 350px;
+    }
+}
+@media (max-width: 984px){
+    .nav .buttons{
+        width: 350px;
+    }
+}
+/* @media (max-width: 848px) {
+    .deliver{
+        position: absolute;
+        top: 1740px  ;
+        left: 30%;
+        font-size: 80px;
+    }
+    
+} */
+@media (max-width: 717px){
+    .nav .button_1{
+        width: 140px;
+        height: 40px;
+        border-radius: 40px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .nav .button_2{
+        width: 80px;
+        height: 40px;
+        border-radius: 40px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
+@media (max-width: 630px){
+    .nav .button_1{
+        width: 130px;
+        height: 40px;
+        border-radius: 40px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .nav .button_2{
+        width: 70px;
+        height: 40px;
+        border-radius: 40px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .nav .buttons{
+        width: 250px;
+    }
+    .nav h1{
+        font-size: 45px;
+    }
+}
+@media (max-width: 511px){
+    .nav .buttons{
+        width: 220px;
+    }
+}
+@media (max-width: 491px){
+    .nav .button_1{
+        display: none;
+    }
+    .nav .button_2{
+        display: none;
+    }
+}
+@media (max-width: 450px){
+    .nav .button_1{
+        width: 110px;
+        height: 40px;
+        border-radius: 30px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .nav .button_2{
+        width: 60px;
+        height: 40px;
+        border-radius: 30px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .nav .buttons{
+        width: 200px;
+    }
+    .nav h1{
+        font-size: 45px;
+    }
+    .nav h1{
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 431px){
+    .nav .buttons{
+        display: none;
+    }
+}
+/* Navbar media tugadi */
+
+
+
+/* Box1 media boshlandi */
+
+@media(max-width: 1205px){
+    .box_1 div h1{
+        font-size: 70px;
+    }
+}
+@media (max-width: 1073px){
+    .box_1 div h1{
+        font-size: 65px;
+    }
+    .box_1 div p{
+        font-size: 18px;
+    }
+}
+@media (max-width: 1000px){
+    .box_1 div h1{
+        font-size: 60px;
+    }
+}
+@media (max-width: 977px){
+    .box_1 div h1{
+        font-size: 55px;
+    }
+    .box_1 div p{
+        font-size: 17px;
+    }
+}
+@media (max-width: 929px){
+    .box_1 div h1{
+        font-size: 55px;
+    }
+    .box_1 div p{
+        font-size: 16px;
+    }
+}
+@media (max-width: 881px){
+    .box_1 div p{
+        font-size: 15px;
+    }
+    .box_1 div button{
+        width: 200px;
+        height: 45px;
+        border: none;
+        background-color: rgba(108,0,0,1);
+        color: white;
+        border-radius: 50px;
+        font-size: 25px;
+        font-family: "Concert One", sans-serif;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    .box_1 div h1{
+        font-size: 53px;
+    }
+}
+
+@media (max-width: 851px){
+     .box_1{
+        flex-wrap: wrap;
+        height: 125%;
+     }
+     .box_1 div h1{
+        font-size: 80px;
+        padding-top: 50px;
+     }
+     .box_1 div button{
+        width: 300px;
+        height: 70px;
+        font-size: 40px;
+        margin-top: 20px;
+     }
+     .box_1 div p{
+        font-size: 30px;
+        margin-top: 40px;
+        padding: 0px;
+     }
+     .box_1 div{
+        width: 100%;
+        text-align: center;
+     }
+     .box_2{
+        margin-top: 120%;
+     }
+}
+@media (max-width: 725px){
+    .box_1{
+        flex-wrap: wrap;
+        height: 125%;
+     }
+     .box_1 div h1{
+        font-size: 65px;
+     }
+     .box_1 div button{
+        width: 250px;
+        height: 60px;
+        font-size: 30px;
+     }
+     .box_1 div p{
+        font-size: 25px;
+        padding: 0px;
+     }
+     .box_1 div{
+        width: 100%;
+        text-align: center;
+     }
+     .box_2{
+        margin-top: 120%;
+     }
+}
+@media (max-width: 605px){
+
+     .box_1 div h1{
+        font-size: 50px;
+     }
+     .box_1 div button{
+        width: 200px;
+        height: 55px;
+        font-size: 25px;
+     }
+     .box_1 div p{
+        font-size: 20px;
+        padding: 0px;
+     }
+
+}
+
+@media(max-width: 484px){
+    .nav{
+        justify-content: space-around;
+    }
+    .nav h1{
+        padding-left: 20px;
+    }
+    .box_1 div p{
+        font-size: 16px;
+    }
+    .box_1 div h1 {
+        padding-left: 0px;
+    }
+    .box_1 div button{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 388px){
+    .box_1 div p{
+        font-size: 16px;
+    } 
+}
+
+@media (max-width: 351px){
+    .box_1 div h1{
+        font-size: 43px;
+        line-height: 50px;
+     }
+     .box_1 div p{
+        font-size: 15px;
+     }
+}
